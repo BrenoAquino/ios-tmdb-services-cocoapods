@@ -12,6 +12,6 @@ Pod::Spec.new do |spec|
   spec.tvos.deployment_target = "10.0"
   spec.osx.deployment_target  = "10.14"
 
-  spec.source               = { :git => "https://github.com/BrenoAquino/ios-tmdb-services-cocoapods.git", :tag => "#{spec.version}" }
+  spec.source                   = { :git => "https://github.com/BrenoAquino/ios-tmdb-services-cocoapods.git", :tag => "#{spec.version}" }
   spec.ios.vendored_frameworks  = "TMDBServices.framework"
 end
