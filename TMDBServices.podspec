@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "TMDBServices"
-  spec.version      = "1.0.6"
+  spec.version      = "1.1"
   spec.summary      = "Short description of TMDBServices."
   spec.description  = "Another description of TMDBServices, but it is more longer."
   spec.homepage     = "https://github.com/BrenoAquino/ios-tmdb-services-framework"
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.tvos.deployment_target = "10.0"
   spec.osx.deployment_target  = "10.14"
 
-  spec.source                   = { :http => "https://github.com/BrenoAquino/ios-tmdb-services-cocoapods/archive/#{spec.version}.zip" }
-  spec.source_files             = "MyFramework.framework/Headers/*.h"
+  spec.source                   = { :git => "https://github.com/BrenoAquino/ios-tmdb-services-cocoapods.git", :tag => "#{spec.version}" }
+  spec.source_files             = "TMDBServices.framework/Headers/*.h"
   spec.ios.vendored_frameworks  = "TMDBServices.framework"
 end
