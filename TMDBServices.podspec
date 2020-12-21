@@ -15,4 +15,6 @@ Pod::Spec.new do |spec|
   spec.source                   = { :git => "https://github.com/BrenoAquino/ios-tmdb-services-cocoapods.git", :tag => "#{spec.version}" }
   spec.source_files             = "TMDBServices.framework/Headers/*.h"
   spec.ios.vendored_frameworks  = "TMDBServices.framework"
+  
+  spec.dependency "Moya", "14.0.0"
 end
